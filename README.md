@@ -21,7 +21,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/neo-agent-lab.git
+git clone https://github.com/baobaodawang-creater/neo-agent-lab.git
 
 # 复制配置模板
 cp configs/openclaw.json.example ~/.openclaw/openclaw.json
