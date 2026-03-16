@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "profiles": {
+    "anthropic:default": {
+      "provider": "anthropic",
+      "type": "api_key",
+      "key": "替换为你的Claude_API_Key"
+    },
+    "custom-api-deepseek-com:default": {
+      "provider": "custom-api-deepseek-com",
+      "type": "api_key",
+      "key": "替换为你的DeepSeek_API_Key"
+    },
+    "google:default": {
+      "provider": "google",
+      "type": "api_key",
+      "key": "替换为你的Google_API_Key"
+    }
+  },
+  "usageStats": {}
+}
