@@ -12,7 +12,9 @@
     "defaults": {
       "model": {
         "primary": "anthropic/claude-sonnet-4-6",
-        "fallbacks": ["custom-api-deepseek-com/deepseek-chat"]
+        "fallbacks": [
+          "custom-api-deepseek-com/deepseek-chat"
+        ]
       },
       "models": {
         "anthropic/claude-sonnet-4-6": {},
@@ -24,14 +26,48 @@
       "workspace": "/home/node/.openclaw/workspace"
     },
     "list": [
-      { "id": "main", "model": { "primary": "anthropic/claude-sonnet-4-6" } },
-      { "id": "pm", "model": { "primary": "anthropic/claude-sonnet-4-6" } },
-      { "id": "analyst", "model": { "primary": "google/gemini-3.1-pro-preview" } },
-      { "id": "search", "model": { "primary": "custom-api-deepseek-com/deepseek-chat" } },
-      { "id": "secretary", "model": { "primary": "custom-api-deepseek-com/deepseek-chat" } },
-      { "id": "fakao", "model": { "primary": "custom-api-deepseek-com/deepseek-chat" } },
-      { "id": "ainews", "model": { "primary": "custom-api-deepseek-com/deepseek-chat" } },
-      { "id": "monitor", "model": { "primary": "custom-api-deepseek-com/deepseek-chat" } }
+      {
+        "id": "main",
+        "model": {
+          "primary": "anthropic/claude-sonnet-4-6"
+        }
+      },
+      {
+        "id": "pm",
+        "model": {
+          "primary": "anthropic/claude-sonnet-4-6"
+        }
+      },
+      {
+        "id": "analyst",
+        "model": {
+          "primary": "google/gemini-3.1-pro-preview"
+        }
+      },
+      {
+        "id": "search",
+        "model": {
+          "primary": "custom-api-deepseek-com/deepseek-chat"
+        }
+      },
+      {
+        "id": "secretary",
+        "model": {
+          "primary": "custom-api-deepseek-com/deepseek-chat"
+        }
+      },
+      {
+        "id": "ainews",
+        "model": {
+          "primary": "custom-api-deepseek-com/deepseek-chat"
+        }
+      },
+      {
+        "id": "monitor",
+        "model": {
+          "primary": "custom-api-deepseek-com/deepseek-chat"
+        }
+      }
     ]
   },
   "models": {
@@ -94,24 +130,64 @@
   "channels": {
     "telegram": {
       "dmPolicy": "open",
-      "allowFrom": ["*"],
+      "allowFrom": [
+        "*"
+      ],
       "accounts": {
-        "default": { "botToken": "替换为主控bot_token" },
-        "pm": { "botToken": "替换为pm_bot_token" },
-        "secretary": { "botToken": "替换为secretary_bot_token" },
-        "fakao": { "botToken": "替换为fakao_bot_token" },
-        "ainews": { "botToken": "替换为ainews_bot_token" },
-        "monitor": { "botToken": "替换为monitor_bot_token" }
+        "default": {
+          "botToken": "替换为主控bot_token"
+        },
+        "pm": {
+          "botToken": "替换为pm_bot_token"
+        },
+        "secretary": {
+          "botToken": "替换为secretary_bot_token"
+        },
+        "ainews": {
+          "botToken": "替换为ainews_bot_token"
+        },
+        "monitor": {
+          "botToken": "替换为monitor_bot_token"
+        }
       }
     }
   },
   "bindings": [
-    { "agentId": "main", "match": { "channel": "telegram", "accountId": "default" } },
-    { "agentId": "pm", "match": { "channel": "telegram", "accountId": "pm" } },
-    { "agentId": "secretary", "match": { "channel": "telegram", "accountId": "secretary" } },
-    { "agentId": "fakao", "match": { "channel": "telegram", "accountId": "fakao" } },
-    { "agentId": "ainews", "match": { "channel": "telegram", "accountId": "ainews" } },
-    { "agentId": "monitor", "match": { "channel": "telegram", "accountId": "monitor" } }
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "telegram",
+        "accountId": "default"
+      }
+    },
+    {
+      "agentId": "pm",
+      "match": {
+        "channel": "telegram",
+        "accountId": "pm"
+      }
+    },
+    {
+      "agentId": "secretary",
+      "match": {
+        "channel": "telegram",
+        "accountId": "secretary"
+      }
+    },
+    {
+      "agentId": "ainews",
+      "match": {
+        "channel": "telegram",
+        "accountId": "ainews"
+      }
+    },
+    {
+      "agentId": "monitor",
+      "match": {
+        "channel": "telegram",
+        "accountId": "monitor"
+      }
+    }
   ],
   "tools": {
     "web": {
@@ -123,7 +199,9 @@
     }
   },
   "plugins": {
-    "slots": { "memory": "memory-lancedb" },
+    "slots": {
+      "memory": "memory-lancedb"
+    },
     "entries": {
       "memory-lancedb": {
         "enabled": true,
