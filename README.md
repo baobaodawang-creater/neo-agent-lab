@@ -53,3 +53,10 @@ docker compose up -d
 ## License
 
 MIT
+
+## Published Skills on ClawHub
+
+| Skill | Description | Link |
+|---|---|---|
+| search-analyst-pair | Fixed 3-step research workflow: Search → Analyst → Main | [clawhub.ai](https://clawhub.ai/baobaodawang-creater/search-analyst-pair) |
+| openclaw-daily-brief | Daily ops brief delivered to Telegram every morning | [clawhub.ai](https://clawhub.ai/skills/openclaw-daily-brief) |
