@@ -1,5 +1,10 @@
 # 🦞 Neo Agent Lab
 
+[![GitHub stars](https://img.shields.io/github/stars/baobaodawang-creater/neo-agent-lab?style=social)](https://github.com/baobaodawang-creater/neo-agent-lab)
+[![GitHub forks](https://img.shields.io/github/forks/baobaodawang-creater/neo-agent-lab?style=social)](https://github.com/baobaodawang-creater/neo-agent-lab)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 > 一套自托管的多 Agent AI 系统，基于 OpenClaw 构建。7 个 Agent 各司其职，6 个 Telegram 机器人，本地模型 + 云端 API 混合部署。
 
 这个仓库记录了从零搭建、踩坑到跑通的完整过程，包括可复用的配置模板、脚本和踩坑手册。
